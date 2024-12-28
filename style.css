@@ -10,6 +10,7 @@ body {
     margin: 3rem 5% 3rem 5%;
 }
 
+/*Header Section*/
 h1 {
     font-size: 3rem;
     margin: 1rem 0;
@@ -55,10 +56,10 @@ nav a:hover {
     color: aqua;
 }
 
+/*Main Section*/
 section {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0;
     text-align: left;
 }
 
@@ -69,11 +70,11 @@ main article {
 }
 
 .col{
-    background-color: peachpuff;
+    background-color: rgb(246, 225, 205);
 }
 
 .banner {
-    background-image: url('./pasta.jpg');
+    background-image: url('https://github.com/cool30/htmlcss_depth/blob/main/images/pasta.jpg?raw=true');
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,15 +95,20 @@ article img {
 
 article ul{
     list-style: none;
+    display: inline-block;
+}
+
+.timings{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 article p{
     margin-bottom: 1rem;
 }
 
+/*Footer Section*/
 footer {
     background-color: #EDEFEE;
     display: flex;
@@ -122,6 +128,7 @@ footer div img {
     max-width: 50%;
 }
 
+/*Responsiveness*/
 @media screen and (max-width : 550px) {
     header>img {
         width: 15rem;
